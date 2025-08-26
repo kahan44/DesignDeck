@@ -1,0 +1,462 @@
+/* heading */
+
+#heading #hd1 {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Mona Sans';
+    letter-spacing: 2px;
+}
+
+#heading #hd2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Mona Sans';
+}
+
+#r1 {
+    display: flex;
+    justify-content: center;
+}
+
+#heading h1 {
+    font-weight: bold;
+
+}
+
+#paragraph #pr1{
+    margin-top: 15px;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    font-family: 'Mona Sans';
+}
+
+#pr1{
+    margin-bottom: 0;
+}
+
+#paragraph #pr2{
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    font-family: 'Mona Sans';
+}
+
+/* category list */
+
+.topics {
+    font-family: 'Mona Sans';
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#active {
+    background-color: #eecfdf;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .items-list .list-inline-item {
+        padding: 5px;
+    }
+}
+
+/* posts */
+
+.image-container {
+    display: block;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+
+.zoom-effect {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.image-container:hover .zoom-effect {
+    transform: scale(1.1);
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+@media (max-width:1200px) {
+    .tooltip-content {
+        display: none !important;
+    }
+}
+
+.tooltip-content {
+    display: none;
+    position: absolute;
+    bottom: 130%;
+    left: -15%;
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    white-space: nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.tooltip-content::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 10px;
+    transform: translateX(0);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #f8f9fa transparent transparent transparent;
+}
+
+.tooltip-container:hover .tooltip-content {
+    display: flex;
+}
+
+.tooltip-avatar {
+    height: 45px;
+    border-radius: 50%;
+}
+
+.tooltip-text {
+    font-weight: bold;
+    font-size: 16px;
+    color: #495057;
+}
+
+.btn-follow {
+    font-family: 'Mono Sans';
+    border-radius: 30px !important;
+}
+
+/* post - modal */
+
+.custom-modal-header {
+    background-color: #000000CC !important;
+    border-bottom: none !important;
+}
+
+.close-button {
+    position: relative;
+    width: 2em;
+    height: 2em;
+    border: none;
+    background: rgba(180, 83, 107, 0.11);
+    border-radius: 5px;
+    transition: background 0.5s;
+}
+
+.X {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1.5em !important;
+    height: 1.5px !important;
+    background-color: rgb(255, 255, 255);
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.Y {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1.5em !important;
+    height: 1.5px !important;
+    background-color: #fff;
+    transform: translateX(-50%) rotate(-45deg);
+}
+
+.close-button:hover {
+    background-color: rgb(211, 21, 21);
+}
+
+.close-button:active {
+    background-color: rgb(130, 0, 0);
+}
+
+.close-button:hover > .close {
+    animation: close 0.2s forwards 0.25s;
+}
+
+.like input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.like {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.like svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    transition: all 0.3s;
+    fill: #999999;
+}
+
+.like svg:hover {
+    transform: scale(1.1);
+}
+
+.like input:checked ~ svg {
+    fill: #E3474F;
+}
+
+.bookmark-checkbox {
+    display: inline-block;
+}
+
+.bookmark-checkbox__input {
+    display: none;
+}
+
+.bookmark-checkbox__label {
+    cursor: pointer;
+}
+
+.bookmark-checkbox__icon {
+    width: 1.7em;
+    height: 1.7em;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke 0.3s, fill 0.3s;
+}
+
+.bookmark-checkbox__icon-back {
+    stroke: #333;
+    transition: transform 0.3s;
+}
+
+.bookmark-checkbox__icon-check {
+    stroke: #fff;
+    stroke-dasharray: 16;
+    stroke-dashoffset: 16;
+    transition: stroke-dashoffset 0.3s, transform 0.3s;
+    transform: translateX(2px);
+}
+
+.bookmark-checkbox__input:checked + .bookmark-checkbox__label .bookmark-checkbox__icon {
+    fill: #ff5a5f;
+}
+
+.bookmark-checkbox__input:checked + .bookmark-checkbox__label .bookmark-checkbox__icon-back {
+    stroke: #ff5a5f;
+    transform: scale(1.1);
+    animation: bookmark-pop 0.4s ease;
+}
+
+.bookmark-checkbox__input:checked + .bookmark-checkbox__label .bookmark-checkbox__icon-check {
+    stroke-dashoffset: 0;
+    transition-delay: 0.2s;
+}
+
+@keyframes bookmark-pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.desc-span {
+    font-family: 'Mono Sans';
+    font-size: 22px !important;
+}
+
+@media (min-width: 1400px) {
+    .modal-description {
+        margin-left: 100px !important;
+    }
+}
+
+/* signup btn - 2  */
+
+#sign2 {
+    height: 40px;
+    width: 170px;
+    background-color: black;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    font-size: 16px;
+    font-family: 'Mona Sans';
+}
+
+
+/* Carousel */
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos-slide img {
+    height: 150px !important;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+    margin: 0 auto;
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 25s slide infinite linear;
+    transition: transform 0.5s ease-in-out;
+}
+
+.logos-slide .logo-item {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.logos-slide a {
+    text-decoration: none;
+}
+
+.logos-slide img {
+    height: 80px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.logos-slide img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+.category-name {
+    font-weight: 550;
+    position: absolute;
+    bottom: -35px;
+    font-size: 16px;
+    font-family: 'Mona Sans';
+    color: #333;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.logos-slide img:nth-child(odd) {
+    opacity: 0.95;
+}
+
+.logos-slide img:nth-child(odd):hover {
+    opacity: 1;
+}
+
+.logos-slide img:nth-child(even) {
+    opacity: 0.9;
+}
+
+.logos-slide img:nth-child(even):hover {
+    opacity: 1;
+}
+
+.logos-slide img:nth-child(odd):not(:hover), .logos-slide img:nth-child(even):not(:hover) {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+    .logos {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .logos-slide img {
+        height: 60px;
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logos-slide img {
+        height: 50px;
+        margin: 0 15px;
+    }
+
+    .logos {
+        padding: 40px 0;
+    }
+}
+
+
+
+/* Back to top button */
+
+button#backToTopBtn {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 20px;
+    font-size: 25px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+button#backToTopBtn:hover {
+    background-color: #6a6c6e;
+}
+
+button#backToTopBtn:focus, .btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+@media (max-width: 700px) {
+    #backToTopBtn {
+        display: none !important;
+    }
+}

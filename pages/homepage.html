@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Project/FSD-Individual/images/new-logo.png" type="image/png">
+    <title>Design Deck - Show. Inspire. Connect.</title>
+    <link rel="stylesheet" href="/Project/FSD-Individual/styles/home.css">
+    <link rel="stylesheet" href="/Project/FSD-Individual/styles/navbar_footer.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="home-navbar">
+        <nav class="navbar navbar-expand-xl bg-white navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand flex-fill" href="homepage.html"><img src="\Project\FSD-Individual\images\new-dd-1.png" style="height: 40px;"></a>
+
+                <div class="searchBtn d-xl-none">
+                    <a href="#"><img src="\Project\FSD-Individual\images\toggle-search-icon.png" alt="Search" data-bs-toggle="collapse" data-bs-target="#sBox"></a>
+                </div>
+
+                <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <label class="hamburger">
+                      <input type="checkbox">
+                      <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                        <path class="line" d="M7 16 27 16"></path>
+                      </svg>
+                    </label>
+                </button>
+ 
+                <div class="container d-flex justify-content-center " id="toggled-sbox">
+                    <div class="collapse" id="sBox">
+                        <div class="search" id="toggled-search">
+                            <input type="text" id="searchBox" placeholder="What are you looking for?">
+                            <a href="#" id="sicon"><img src="\Project\FSD-Individual\images\search-icon.png"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 20px !important;">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item" id="nav-list-search1">
+                            <div class="search d-none d-xl-block">
+                                <input type="text" class="navSearchInput" id="searchBox" placeholder="What are you looking for?">
+                                <a href="#" id="sicon"><img src="\Project\FSD-Individual\images\search-icon.png"></a>
+                            </div>
+                        </li>
+                        <li class="nav-item" id="nav-list-search2">
+                            <div class="search d-none d-xl-block">
+                                <input type="text" class="navSearchInput" id="searchBox" placeholder="What are you looking for?">
+                                <a href="#" id="sicon"><img src="\Project\FSD-Individual\images\search-icon.png"></a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                                Hire a Designer <img src="\Project\FSD-Individual\images\dropdown-icon.jpeg" style="height: 8px; padding-left: 3px;">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="\Project\FSD-Individual\pages\browsepage.html"><img src="\Project\FSD-Individual\images\job-icon.png" style="height: 22px; margin-right: 10px; margin-bottom: 5px;">Browse Designers</a></li>
+                                <li><a class="dropdown-item" href="\Project\FSD-Individual\pages\formpage.html"><img src="\Project\FSD-Individual\images\submit-icon.png" style="height: 22px; margin-right: 10px; margin-bottom: 5px;">Submit a Project Brief</a></li>
+                                <li><a class="dropdown-item" href="\Project\FSD-Individual\pages\hiring-infopage.html"><img src="\Project\FSD-Individual\images\info-icon.png" style="height: 22px; margin-right: 10px; margin-bottom: 5px;">Hiring on DesignDeck</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-2"><a class="nav-link" href="\Project\FSD-Individual\pages\findjobs.html">Find Jobs</a></li>
+                        <li class="nav-item px-2"><a class="nav-link" href="\Project\FSD-Individual\pages\blog.html">Blog</a></li>
+                    </ul>
+
+                    <div class="signupBtns">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item px-2">
+                                <a class="nav-link" id="signup" href="signup.html">Sign up</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a href="login.html"><button class="btn btn-outline-dark active" id="log-btn">Log in</button></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main heading -->
+
+    <div id="heading" class="text-center py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4 fw-bold text-wrap" id="hd1">
+                        Discover the world’s
+                    </h1>
+                    <h1 class="display-4 fw-bold text-wrap" id="hd2">
+                        top designers
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="paragraph" class="text-center py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p id="pr1">
+                        Explore work from the most talented and accomplished designers
+                    </p>
+                    <p id="pr2">
+                        ready to take on your next project
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Category List -->
+
+    <div class="items-list mt-5">
+        <ul class="list-inline d-flex flex-wrap justify-content-center">
+            <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark" id="active">Discover</a></li>
+            <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Animation</a></li>
+            <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Branding</a></li>
+            <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Web Design</a></li>
+            <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Product Design</a></li>
+            <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Typography</a></li>
+            <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Illustration</a></li>
+            <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Mobile</a></li>
+            <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Print</a></li>
+        </ul>
+    </div>
+
+    <!-- Posts -->
+    
+    <div class="container pt-5">
+        <!-- Item Row - 1 -->
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#post-1-modal" data-bs-toggle="modal" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-1.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-1-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-1-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Kahan</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Kahan</span>
+                        </div>
+                        <img src="/Project/FSD-Individual/images/likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#post-2-modal" data-bs-toggle="modal" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-2.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-2-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-2-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Daniel</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Daniel</span>
+                        </div>
+                        <img src="/Project/FSD-Individual/images/likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#post-3-modal" data-bs-toggle="modal" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-3.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-3-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-3-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Alfrey</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Alfrey</span>
+                        </div>
+                        <img src="/Project/FSD-Individual/images/likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#post-4-modal" data-bs-toggle="modal" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-4.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-4-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-4-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Nixtio</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Nixtio</span>
+                        </div>
+                        <img src="/Project/FSD-Individual/images/likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item Row - 2 -->
+        <div class="row g-4 pt-4">
+            <!-- Card 5 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-5.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-5-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-5-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Gert Van</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Gert Van</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 6 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-6.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-6-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-6-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Angie</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Angie</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 7 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-7.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-7-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-7-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">MUTI</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">MUTI</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 8 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-8.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-8-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-8-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Nexos</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Nexos</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item Row - 3 -->
+        <div class="row g-4 pt-4">
+            <!-- Card 9 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#">
+                            <video 
+                                src="\Project\FSD-Individual\images\item-9.mp4" 
+                                style="height: 240px; width: 100%; object-fit: cover;" 
+                                muted 
+                                onmouseover="this.play()" 
+                                onmouseout="this.pause(); this.currentTime = 0;" 
+                                preload="auto"
+                                disablePictureInPicture 
+                                controlsList="nodownload nofullscreen noremoteplayback"
+                                class="rounded">
+                            </video>
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-9-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-9-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Afterglow</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Afterglow</span>
+                        </div>
+                        <img src="/Project/FSD-Individual/images/likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 10 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-10.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-10-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-10-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Peter Voth</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Peter Voth</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 11 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-11.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-11-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-11-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Dusal Sol</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Dusan Sol</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 12 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#">
+                            <video 
+                                src="\Project\FSD-Individual\images\item-12.mp4" 
+                                style="height: 240px; width: 100%; object-fit: cover;" 
+                                muted 
+                                onmouseover="this.play()" 
+                                onmouseout="this.pause(); this.currentTime = 0;" 
+                                preload="auto"
+                                disablePictureInPicture 
+                                controlsList="nodownload nofullscreen noremoteplayback"
+                                class="rounded">
+                            </video>
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-12-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-12-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Arx Max</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Arx Max</span>
+                        </div>
+                        <img src="/Project/FSD-Individual/images/likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item Row - 4 -->
+
+        <div class="row g-4 pt-4">
+            <!-- Card 13 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-13.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-13-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-13-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Korsa</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Korsa</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 14 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-14.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-14-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-14-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Ulysses</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Ulysses</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 15 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-15.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-15-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-15-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">LAIN</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">LAIN</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 16 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-16.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-16-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-16-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Scott</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Scott</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item Row - 5  -->
+        <div class="row g-4 pt-4">
+            <!-- Card 17 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-17.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-17-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-17-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">PaperPillar</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">PaperPillar</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 18 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-18.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-18-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-18-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Ramy</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Ramy</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 19 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#">
+                            <video 
+                                src="\Project\FSD-Individual\images\item-19.mp4" 
+                                style="height: 240px; width: 100%; object-fit: cover;" 
+                                muted 
+                                onmouseover="this.play()" 
+                                onmouseout="this.pause(); this.currentTime = 0;" 
+                                preload="auto"
+                                disablePictureInPicture 
+                                controlsList="nodownload nofullscreen noremoteplayback"
+                                class="rounded">
+                            </video>
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-19-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-19-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Zeyox</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Zeyox</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 20 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-20.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-20-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-20-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">strangelabs</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">strangelabs</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Item - Row - 6 -->
+        <div class="row g-4 pt-4">
+            <!-- Card 21 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-21.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-21-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-21-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">Panze</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">Panze</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 22 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <a href="#" class="image-container">
+                            <img src="\Project\FSD-Individual\images\item-22.jpg" class="img-fluid rounded zoom-effect" style="height: 240px; width: 100%; object-fit: cover;">
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between align-items-center bg-white border-0">
+                        <div class="d-flex align-items-center">
+                            <div class="tooltip-container">
+                                <a href="#" class="text-decoration-none">
+                                    <img src="/Project/FSD-Individual/images/item-22-logo.jpg" class="rounded-circle me-2" style="height: 30px;">
+                                    <div class="tooltip-content">
+                                        <img src="/Project/FSD-Individual/images/item-22-logo.jpg" class="tooltip-avatar">
+                                        <span class="tooltip-text">HALO LAB</span>
+                                        <button class="btn btn-outline-dark btn-follow active">Follow</button>
+                                    </div>
+                                </a>
+                            </div>
+                            <span class="fw-bold">HALO LAB</span>
+                        </div>
+                        <img src="\Project\FSD-Individual\images\likes.png" height="30px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post - modal for card - 1 -->
+
+    <div class="post-content">
+        <div class="modal fade" id="post-1-modal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header custom-modal-header d-flex justify-content-end">
+                        <button class="close-button btn btn-close" data-bs-dismiss="modal">
+                            <span class="X"></span>
+                            <span class="Y"></span>
+                        </button>                        
+                    </div>
+                    <div class="modal-body">
+                        <div class="container pt-5">
+                            <h1 class="fw-bold" style="font-family: 'Mono Sans';">Design Deck</h1>
+    
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/Project/FSD-Individual/images/item-1-logo.jpg" class="rounded-circle mt-3" style="height: 50px;">
+                                    <div class="d-flex flex-column ms-3 mt-2">
+                                        <span style="font-family: 'Mono Sans'; font-size: 16px;" class="fw-bold">Kahan</span>
+                                        <span style="font-size: 13px; color: rgb(0, 170, 0); font-family: 'Mono Sans';">Available for work</span>
+                                    </div>
+                                    <div class="d-flex flex-column ms-3 mt-2">
+                                        <button class="btn btn-outline-dark btn-follow active" style="font-family: 'Mono Sans';">Follow</button>
+                                    </div>
+                                </div>
+    
+                                <div class="modal-icons d-flex gap-3">
+                                    <span>
+                                        <label class="like">
+                                            <input type="checkbox">
+                                            <svg id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path d="M16.4,4C14.6,4,13,4.9,12,6.3C11,4.9,9.4,4,7.6,4C4.5,4,2,6.5,2,9.6C2,14,12,22,12,22s10-8,10-12.4C22,6.5,19.5,4,16.4,4z"></path>
+                                            </svg>
+                                        </label>                                      
+                                    </span>
+    
+                                    <span class="mt-1">
+                                        <div class="bookmark-checkbox">
+                                            <input type="checkbox" id="bookmark-toggle" class="bookmark-checkbox__input"/>
+                                            <label for="bookmark-toggle" class="bookmark-checkbox__label">
+                                                <svg class="bookmark-checkbox__icon" viewBox="0 0 24 24">
+                                                    <path class="bookmark-checkbox__icon-back" d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                                    <path class="bookmark-checkbox__icon-check" d="M8 11l3 3 5-5"></path>
+                                                </svg>
+                                            </label>
+                                        </div>                                      
+                                    </span>
+    
+                                    <span>
+                                        <button class="btn btn-outline-dark btn-follow active" style="font-family: 'Mono Sans';">Get in touch</button>
+                                    </span>
+                                </div>
+                            </div>
+    
+                            <div class="modal-image d-flex justify-content-center mt-4">
+                                <img src="/Project/FSD-Individual/images/item-1.jpg" class="img-fluid">
+                            </div>
+    
+                            <div class="modal-description mt-5">
+                                <div class="container ms-5">
+                                    <div class="d-flex flex-column align-items-start mb-4">
+                                        <h2 class="fw-bold" style="font-family: 'Mono Sans';">What it is:</h2>
+                                        <span class="desc-span">⭐ A platform where designers can showcase their creative work and explore stunning design portfolios.</span>
+                                    </div>
+    
+                                    <div class="d-flex flex-column align-items-start mb-4">
+                                        <h2 class="fw-bold" style="font-family: 'Mono Sans';">Features:</h2>
+                                        <span class="desc-span">⭐ Browse a variety of high-quality design shots.</span>
+                                        <span class="desc-span">⭐ View and interact with user profiles.</span>
+                                        <span class="desc-span">⭐ Follow designers to stay updated with their latest work.</span>
+                                        <span class="desc-span">⭐ Fully responsive, ensuring a great experience on any device.</span>
+                                    </div>
+    
+                                    <div class="d-flex flex-column align-items-start mb-4">
+                                        <h2 class="fw-bold" style="font-family: 'Mono Sans';">Tech Used:</h2>
+                                        <span class="desc-span">⭐ Built with HTML, CSS, JavaScript, and BootStrap for smooth, interactive design.</span>
+                                    </div>
+    
+                                    <div class="d-flex flex-column align-items-start mb-4">
+                                        <h2 class="fw-bold" style="font-family: 'Mono Sans';">Purpose:</h2>
+                                        <span class="desc-span">⭐ A project to create a space for designers to display their work and engage with a creative community.</span>
+                                    </div>
+    
+                                    <div class="d-flex flex-column align-items-start mb-4">
+                                        <h2 class="fw-bold" style="font-family: 'Mono Sans';">Social Network:</h2>
+                                        <span class="desc-span">🔗 <a href="https://www.instagram.com/kahan.04_/profilecard/?igsh=MXRkZGFzYTN4eG1yaw==" class="text-dark">Instagram</a></span>
+                                    </div>
+                                </div>
+                            </div>                                                       
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post - modal for card - 2 -->
+
+    <div class="post-content">
+        <div class="modal fade" id="post-2-modal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header custom-modal-header d-flex justify-content-end">
+                        <button class="close-button btn btn-close" data-bs-dismiss="modal">
+                            <span class="X"></span>
+                            <span class="Y"></span>
+                        </button>                        
+                    </div>
+                    <div class="modal-body">
+                        <div class="container pt-5">
+                            <h1 class="fw-bold" style="font-family: 'Mono Sans';">RoundRobin</h1>
+    
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/Project/FSD-Individual/images/item-2-logo.jpg" class="rounded-circle mt-3" style="height: 50px;">
+                                    <div class="d-flex flex-column ms-3 mt-2">
+                                        <span style="font-family: 'Mono Sans'; font-size: 16px;" class="fw-bold">Daniel</span>
+                                        <span style="font-size: 13px; color: rgb(0, 170, 0); font-family: 'Mono Sans';">Available for work</span>
+                                    </div>
+                                    <div class="d-flex flex-column ms-3 mt-2">
+                                        <button class="btn btn-outline-dark btn-follow active" style="font-family: 'Mono Sans';">Follow</button>
+                                    </div>
+                                </div>
+    
+                                <div class="modal-icons d-flex gap-3">
+                                    <span>
+                                        <label class="like">
+                                            <input type="checkbox">
+                                            <svg id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path d="M16.4,4C14.6,4,13,4.9,12,6.3C11,4.9,9.4,4,7.6,4C4.5,4,2,6.5,2,9.6C2,14,12,22,12,22s10-8,10-12.4C22,6.5,19.5,4,16.4,4z"></path>
+                                            </svg>
+                                        </label>                                      
+                                    </span>
+    
+                                    <span class="mt-1">
+                                        <div class="bookmark-checkbox">
+                                            <input type="checkbox" id="bookmark-toggle-2" class="bookmark-checkbox__input"/>
+                                            <label for="bookmark-toggle-2" class="bookmark-checkbox__label">
+                                                <svg class="bookmark-checkbox__icon" viewBox="0 0 24 24">
+                                                    <path class="bookmark-checkbox__icon-back" d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                                    <path class="bookmark-checkbox__icon-check" d="M8 11l3 3 5-5"></path>
+                                                </svg>
+                                            </label>
+                                        </div>                                      
+                                    </span>
+    
+                                    <span>
+                                        <button class="btn btn-outline-dark btn-follow active" style="font-family: 'Mono Sans';">Get in touch</button>
+                                    </span>
+                                </div>
+                            </div>
+    
+                            <div class="modal-image d-flex justify-content-center mt-4">
+                                <img src="/Project/FSD-Individual/images/item-2.jpg" class="img-fluid">
+                            </div>
+    
+                            <div class="modal-description mt-5">
+                                <div class="container ms-5">
+                                    <div class="d-flex flex-column align-items-start mb-4">
+                                        <span class="desc-span">Logo proposal for RoundRobin, a privacy dashboard for viewing and managing data collected by companies online. The design combines a Robin bird with the letter 'R.' What do you think?</span>
+                                    </div>
+    
+                                    <div class="d-flex flex-column align-items-start mb-4">
+                                        <span class="desc-span">For a project reach out to me at <span class="desc-span text-decoration-underline">daniel@kreatank.com</span></span>
+                                        <span class="desc-span text-decoration-underline">Kreatank.com | Behance | Instagram | Facebook | LinkedIn</span>
+                                    </div>
+                                </div>
+                            </div>                                                       
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post - modal for card - 3 -->
+
+    <div class="post-content">
+        <div class="modal fade" id="post-3-modal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header custom-modal-header d-flex justify-content-end">
+                        <button class="close-button btn btn-close" data-bs-dismiss="modal">
+                            <span class="X"></span>
+                            <span class="Y"></span>
+                        </button>                        
+                    </div>
+                    <div class="modal-body">
+                        <div class="container pt-5">
+                            <h1 class="fw-bold" style="font-family: 'Mono Sans';">Kraken Illustration</h1>
+    
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/Project/FSD-Individual/images/item-3-logo.jpg" class="rounded-circle mt-3" style="height: 50px;">
+                                    <div class="d-flex flex-column ms-3 mt-2">
+                                        <span style="font-family: 'Mono Sans'; font-size: 16px;" class="fw-bold">Alfrey</span>
+                                        <span style="font-size: 13px; color: rgb(0, 170, 0); font-family: 'Mono Sans';">Available for work</span>
+                                    </div>
+                                    <div class="d-flex flex-column ms-3 mt-2">
+                                        <button class="btn btn-outline-dark btn-follow active" style="font-family: 'Mono Sans';">Follow</button>
+                                    </div>
+                                </div>
+    
+                                <div class="modal-icons d-flex gap-3">
+                                    <span>
+                                        <label class="like">
+                                            <input type="checkbox">
+                                            <svg id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path d="M16.4,4C14.6,4,13,4.9,12,6.3C11,4.9,9.4,4,7.6,4C4.5,4,2,6.5,2,9.6C2,14,12,22,12,22s10-8,10-12.4C22,6.5,19.5,4,16.4,4z"></path>
+                                            </svg>
+                                        </label>                                      
+                                    </span>
+    
+                                    <span class="mt-1">
+                                        <div class="bookmark-checkbox">
+                                            <input type="checkbox" id="bookmark-toggle-3" class="bookmark-checkbox__input"/>
+                                            <label for="bookmark-toggle-3" class="bookmark-checkbox__label">
+                                                <svg class="bookmark-checkbox__icon" viewBox="0 0 24 24">
+                                                    <path class="bookmark-checkbox__icon-back" d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                                    <path class="bookmark-checkbox__icon-check" d="M8 11l3 3 5-5"></path>
+                                                </svg>
+                                            </label>
+                                        </div>                                      
+                                    </span>
+    
+                                    <span>
+                                        <button class="btn btn-outline-dark btn-follow active" style="font-family: 'Mono Sans';">Get in touch</button>
+                                    </span>
+                                </div>
+                            </div>
+    
+                            <div class="modal-image d-flex justify-content-center mt-4">
+                                <img src="/Project/FSD-Individual/images/item-3.jpg" class="img-fluid">
+                            </div>
+    
+                            <div class="modal-description mt-5">
+                                <div class="container ms-5">
+                                    <div class="d-flex flex-column align-items-start mb-4">
+                                        <span class="desc-span">An unused Kraken character for a gaming company. It's available for sale.</span>
+                                    </div>
+    
+                                    <div class="d-flex flex-column align-items-start mb-4">
+                                        <span class="desc-span">✉ For any project inquiries: <span class="desc-span text-decoration-underline">alfrey@vaneltia.com</span></span>
+                                    </div>
+                                </div>
+                            </div>                                                       
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Post - modal for card - 4 -->
+
+    <div class="post-content">
+        <div class="modal fade" id="post-4-modal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header custom-modal-header d-flex justify-content-end">
+                        <button class="close-button btn btn-close" data-bs-dismiss="modal">
+                            <span class="X"></span>
+                            <span class="Y"></span>
+                        </button>                        
+                    </div>
+                    <div class="modal-body">
+                        <div class="container pt-5">
+                            <h1 class="fw-bold" style="font-family: 'Mono Sans';">Document Scanner App</h1>
+    
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/Project/FSD-Individual/images/item-4-logo.jpg" class="rounded-circle mt-3" style="height: 50px;">
+                                    <div class="d-flex flex-column ms-3 mt-2">
+                                        <span style="font-family: 'Mono Sans'; font-size: 16px;" class="fw-bold">Nixtio</span>
+                                        <span style="font-size: 13px; color: rgb(0, 170, 0); font-family: 'Mono Sans';">Available for work</span>
+                                    </div>
+                                    <div class="d-flex flex-column ms-3 mt-2">
+                                        <button class="btn btn-outline-dark btn-follow active" style="font-family: 'Mono Sans';">Follow</button>
+                                    </div>
+                                </div>
+    
+                                <div class="modal-icons d-flex gap-3">
+                                    <span>
+                                        <label class="like">
+                                            <input type="checkbox">
+                                            <svg id="Layer_1" version="1.0" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path d="M16.4,4C14.6,4,13,4.9,12,6.3C11,4.9,9.4,4,7.6,4C4.5,4,2,6.5,2,9.6C2,14,12,22,12,22s10-8,10-12.4C22,6.5,19.5,4,16.4,4z"></path>
+                                            </svg>
+                                        </label>                                      
+                                    </span>
+    
+                                    <span class="mt-1">
+                                        <div class="bookmark-checkbox">
+                                            <input type="checkbox" id="bookmark-toggle-4" class="bookmark-checkbox__input"/>
+                                            <label for="bookmark-toggle-4" class="bookmark-checkbox__label">
+                                                <svg class="bookmark-checkbox__icon" viewBox="0 0 24 24">
+                                                    <path class="bookmark-checkbox__icon-back" d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                                    <path class="bookmark-checkbox__icon-check" d="M8 11l3 3 5-5"></path>
+                                                </svg>
+                                            </label>
+                                        </div>                                      
+                                    </span>
+    
+                                    <span>
+                                        <button class="btn btn-outline-dark btn-follow active" style="font-family: 'Mono Sans';">Get in touch</button>
+                                    </span>
+                                </div>
+                            </div>
+    
+                            <div class="modal-image d-flex justify-content-center mt-4">
+                                <img src="/Project/FSD-Individual/images/item-4.jpg" class="img-fluid">
+                            </div>
+
+                            <div class="d-flex justify-content-center mt-5">
+                                <div class="ratio ratio-16x9 mt-5">
+                                    <video 
+                                        src="\Project\FSD-Individual\images\post-modal-4.mp4" 
+                                        class="w-100 h-auto rounded" 
+                                        muted
+                                        autoplay
+                                        preload="auto"
+                                        disablePictureInPicture 
+                                        controlsList="nodownload nofullscreen noremoteplayback">
+                                    </video>
+                                </div>
+                            </div>
+    
+                            <div class="modal-description">
+                                <div class="container">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <span class="desc-span fw-bold">BOOK A MEETING</span>
+                                        <span class="desc-span">Or ping us at 🧑‍💻 <span class="desc-span text-decoration-underline">e-mail</span></span>
+                                        <span class="desc-span">Have any feedback? Feel free to share ❤️</span>
+                                        <span class="desc-span text-decoration-underline">Nixtio.com</span></span>
+                                    </div>
+                                </div>
+                            </div>                                                       
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Button 2-->
+
+    <div class="signUp2 d-flex justify-content-center py-5">
+        <a href="signup.html" id="sign2" class="text-decoration-none text-white fw-bold">Sign up to continue</a>
+    </div>
+
+    <!-- Back to top button -->
+
+    <button id="backToTopBtn" class="btn btn-primary rounded-circle">↑</button>
+    <script>
+        const backToTopBtn = document.getElementById("backToTopBtn");
+        const stopDiv = document.querySelector(".signUp2");
+        backToTopBtn.style.display = 'none';
+    
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopBtn.style.display = 'block';
+            }
+            else {
+                backToTopBtn.style.display = 'none';
+            }
+            const stopOffsetTop = stopDiv.offsetTop;
+            const stopDivHeight = stopDiv.offsetHeight;
+            const buttonHeight = backToTopBtn.offsetHeight;
+    
+            if (window.pageYOffset + window.innerHeight - buttonHeight >= stopOffsetTop) {
+                backToTopBtn.style.position = 'absolute';
+                backToTopBtn.style.top = stopOffsetTop - buttonHeight + 92 + 'px';
+                backToTopBtn.style.height = 57.5+'px';
+            }
+            else {
+                backToTopBtn.style.position = 'fixed';
+                backToTopBtn.style.top = 'auto';
+                backToTopBtn.style.bottom = '20px';
+            }
+        };
+    
+        backToTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+
+    <!-- Carousel -->
+
+    <div class="logos">
+        <div class="logos-slide">
+            <a href="#">
+                <div class="logo-item">
+                    <img src="\Project\FSD-Individual\images\carousel-animation.jpg">
+                    <div class="category-name">Animation</div>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="logo-item">
+                    <img src="\Project\FSD-Individual\images\carousel-branding.jpg">
+                    <div class="category-name">Branding</div>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="logo-item">
+                    <img src="\Project\FSD-Individual\images\carousel-illustration.jpg">
+                    <div class="category-name">Illustration</div>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="logo-item">
+                    <img src="\Project\FSD-Individual\images\carousel-mobile.jpg">
+                    <div class="category-name">Mobile</div>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="logo-item">
+                    <img src="\Project\FSD-Individual\images\carousel-print.jpg">
+                    <div class="category-name">Print</div>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="logo-item">
+                    <img src="\Project\FSD-Individual\images\carousel-productdesign.jpg">
+                    <div class="category-name">Product Design</div>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="logo-item">
+                    <img src="\Project\FSD-Individual\images\carousel-webdesign.jpg">
+                    <div class="category-name">Web Design</div>
+                </div>
+            </a>
+    
+            <a href="#">
+                <div class="logo-item">
+                    <img src="\Project\FSD-Individual\images\carousel-typography.jpg">
+                    <div class="category-name">Typography</div>
+                </div>
+            </a>
+        </div>
+    </div>
+  
+    <script>
+        var copy = document.querySelector(".logos-slide").cloneNode(true);
+        document.querySelector(".logos").appendChild(copy);
+    </script>
+
+    <!-- Footer -->
+
+    <div class="container">
+        <div class="footer-list d-flex flex-wrap justify-content-between py-3 mb-5">
+            <ul class="list-inline d-flex flex-wrap justify-content-center mb-4 mb-lg-0 mt-lg-5" style="margin-right: 30px;">
+                <li class="list-inline-item"><a href="homepage.html" class="text-decoration-none px-3"><img src="\Project\FSD-Individual\images\new-dd-1.png" style="height: 40px;"></a></li>
+            </ul>
+        
+            <div class="items-list mt-4 mt-lg-5">
+                <ul class="list-inline d-flex flex-wrap justify-content-center">
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">For designers</a></li>
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Hire talent</a></li>
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Inspiration</a></li>
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Advertising</a></li>
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Blog</a></li>
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">About</a></li>
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Careers</a></li>
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Support</a></li>
+                </ul>
+            </div>
+        
+            <ul class="d-flex justify-content-center">
+                <li class="list-inline-item">
+                    <a class="socialContainer containerOne" href="https://www.instagram.com/kahan.04_/profilecard/?igsh=MXRkZGFzYTN4eG1yaw==">
+                        <svg viewBox="0 0 16 16" class="socialSvg instagramSvg" width="20" height="20">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                        </svg>
+                    </a>
+                </li>
+        
+                <li class="list-inline-item">
+                    <a class="socialContainer containerTwo" href="#">
+                        <svg viewBox="0 0 16 16" class="socialSvg twitterSvg" width="20" height="20">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                        </svg>
+                    </a>
+                </li>
+        
+                <li class="list-inline-item">
+                    <a class="socialContainer containerThree" href="#">
+                        <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg" width="20" height="20">
+                            <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <div class="footer-description d-flex flex-wrap justify-content-between">
+            <ul>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">© 2025 DesignDeck</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Terms</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Privacy</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Cookies</a></li>
+            </ul>
+    
+            <ul>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Jobs</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Designers</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Freelancers</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Tags</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Places</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Resources</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

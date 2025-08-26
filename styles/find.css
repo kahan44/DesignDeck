@@ -1,0 +1,324 @@
+/* heading */
+
+.heading {
+    font-family: 'Mono Sans';
+    display: flex;
+    justify-self: center;
+    flex-direction: column  ;
+    margin-top: 200px;
+    height: 222px;
+    width: 700px;
+}
+
+.mainHeading h1 {
+    text-align: center;
+    font-size: 66px;
+}
+
+.para {
+    width: 668px;
+}
+
+.para p {
+    color: #3D3D4E;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .heading {
+        margin-top: 200px;
+        width: 90%;
+    }
+    .mainHeading h1 {
+        font-size: 48px;
+    }
+    .para {
+        width: 80%;
+    }
+    .para p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        margin-top: 200px;
+        width: 100%;
+    }
+    .mainHeading h1 {
+        font-size: 36px;
+    }
+    .para {
+        width: 90%;
+    }
+    .para p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainHeading h1 {
+        margin-top: 50px;
+        font-size: 28px;
+    }
+    .para {
+        width: 95%;
+    }
+    .para p {
+        font-size: 12px;
+    }
+}
+
+/* main section */
+
+.mainSection {
+    font-family: 'Mono Sans';
+    margin-top: 120px;
+}
+
+.container.mainSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/* aside form */
+
+.aside-form {
+    font-size: 18px;
+    padding: 20px;
+    border: solid 1px rgb(215, 215, 215);
+    border-radius: 20px;
+    width: 336px;
+    background: white;
+    position: relative;
+    top: 50px;
+}
+
+.aside-form form label:not(.fw-bold) {
+    color: #808080;
+    font-size: 16px;
+}
+
+.form-check {
+    padding-bottom: 7px;
+}
+
+.form-check input[type="checkbox"]:checked + label {
+    color: black;
+}
+
+.form-check-input {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.form-check-input:checked {
+    background-color: #B8509A !important;
+    border-color: pink !important;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 5px 3px pink !important;
+    border-color: pink !important;
+}
+
+.form-control:focus {
+    border-color: pink !important;
+    box-shadow: 0 0 5px 3px pink !important;
+    outline: none;
+}
+
+.form-control:hover {
+    border-color: rgb(245, 127, 146);
+    box-shadow: 0 0 5px rgba(247, 121, 142, 0.715);
+}
+
+#filterBtn {
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+#filterBtn:hover {
+    background-color: #3D3D4E;
+}
+
+/* main content */
+
+#searchLogo {
+    background-color: rgba(255, 213, 220, 0.598);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#searchInput {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.mainContent {
+    margin-top: 50px;
+    flex-grow: 1;
+    max-width: 65%;
+    margin-right: 20px;
+}
+
+.title p {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.job-cards {
+    margin-top: 3px;
+}
+
+.job-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 20px;
+    border: solid 1px rgb(215, 215, 215);
+    border-radius: 15px;
+    max-width: auto !important;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.job-title {
+    margin-left: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.company-name p {
+    font-weight: bold;
+    margin: 0px 0px 10px 0px;
+}
+
+.job-type p {
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 0;
+}
+
+.posting-time {
+    color: #808080;
+}
+
+.job-location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.job-location img {
+    height: 20px;
+}
+
+.job-location span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.job-end-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.jobBtn {
+    background-color: white;
+    color: black;
+    border: solid 1px rgb(215, 215, 215) !important;
+    border-radius: 20px !important;
+    font-weight: bold !important;
+}
+
+@media screen and (min-width: 993px) {
+    .job-card:hover {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+    }
+
+    .job-card:hover .job-end-details {
+        transform: translateY(-20px);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .job-buttons {
+        position: absolute;
+        bottom: 30px;
+        right: 20px;
+        display: flex;
+        gap: 10px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .job-card:hover .job-buttons {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container.mainSection {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .mainContent {
+        width: 100%;
+    }
+
+    .job-card {
+        padding: 10px;
+    }
+
+    .company-name p {
+        margin: 0;
+    }
+
+    #loc {
+        color: #808080;
+    }
+
+    .job-buttons {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container.mainSection {
+        flex-direction: column;
+    }
+
+    .aside-form {
+        width: 100%;
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .mainContent {
+        max-width: 100%;
+        margin-right: 0;
+    }
+}

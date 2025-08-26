@@ -1,0 +1,214 @@
+/* heading and inputs */
+
+.mainHeading {
+    margin-top: 130px !important;
+    font-family: 'Mono Sans';
+}
+
+.input-group-text {
+    background-color: #FFD5DC98 !important;
+}
+
+.input-group:hover .form-control {
+    border-color: rgb(245, 127, 146);
+    box-shadow: 0 0 5px rgba(247, 121, 142, 0.715);
+}
+
+.input-group .form-control:focus {
+    box-shadow: 0 0 5px 3px pink !important;
+    border-color: pink !important;
+}
+
+.form-check-input:checked {
+    background-color: #B8509A !important;
+    border-color: pink !important;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 5px 3px pink !important;
+    border-color: pink !important;
+}
+
+
+/* switch */
+
+.switchDiv {
+    position: absolute;
+    top: 230px;
+    right: 50px;
+    white-space: nowrap;
+    width: 170px;
+}
+
+.switchDiv span {
+    margin-left: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: -3px;
+}
+
+.switch {
+    position: relative;
+    height: 1.2rem;
+    width: 2.5rem;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 9999px;
+    background-color: rgba(100, 116, 139, 0.377);
+    transition: all .3s ease;
+}
+  
+.switch:checked {
+    background-color: rgba(236, 72, 153, 1);
+}
+  
+.switch::before {
+    position: absolute;
+    content: "";
+    left: calc(1.2rem - 1.3rem);
+    top: calc(1.2rem - 1.3rem);
+    display: block;
+    height: 1.3rem;
+    width: 1.3rem;
+    cursor: pointer;
+    border: 1px solid rgba(100, 116, 139, 0.527);
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 10px rgba(100, 116, 139, 0.327);
+    transition: all .3s ease;
+}
+  
+.switch:hover::before {
+    box-shadow: 0 0 0px 6px rgba(0, 0, 0, .15);
+}
+  
+.switch:checked:hover::before {
+    box-shadow: 0 0 0px 6px rgba(236, 72, 153, .15);
+}
+  
+.switch:checked::before {
+    transform: translateX(100%);
+    border-color: rgba(236, 72, 153, 1);
+}
+
+
+
+/* profile - card */
+
+.card-header {
+    border-bottom: none !important;
+}
+
+.card {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.card-hover:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.items-list .list-inline-item {
+    font-family: 'Mono Sans';
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.active {
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.bookmark-checkbox {
+    display: inline-block;
+}
+
+.bookmark-checkbox__input {
+    display: none;
+}
+
+.bookmark-checkbox__label {
+    cursor: pointer;
+}
+
+.bookmark-checkbox__icon {
+    width: 1.7em;
+    height: 1.7em;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke 0.3s, fill 0.3s;
+}
+
+.bookmark-checkbox__icon-back {
+    stroke: #333;
+    transition: transform 0.3s;
+}
+
+.bookmark-checkbox__icon-check {
+    stroke: #fff;
+    stroke-dasharray: 16;
+    stroke-dashoffset: 16;
+    transition: stroke-dashoffset 0.3s, transform 0.3s;
+    transform: translateX(2px);
+}
+
+.bookmark-checkbox__input:checked + .bookmark-checkbox__label .bookmark-checkbox__icon {
+    fill: #ff5a5f;
+}
+
+.bookmark-checkbox__input:checked + .bookmark-checkbox__label .bookmark-checkbox__icon-back {
+    stroke: #ff5a5f;
+    transform: scale(1.1);
+    animation: bookmark-pop 0.4s ease;
+}
+
+.bookmark-checkbox__input:checked + .bookmark-checkbox__label .bookmark-checkbox__icon-check {
+    stroke-dashoffset: 0;
+    transition-delay: 0.2s;
+}
+
+@keyframes bookmark-pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.scroller-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+}
+
+.media-item {
+    flex: 0 0 auto;
+    width: 239px;
+    height: 174.25;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.media-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.media-item:hover img {
+    transform: scale(1.05);
+}

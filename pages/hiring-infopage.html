@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Project/FSD-Individual/images/new-logo.png" type="image/png">
+    <title>Hire the world's top designers | Design Deck</title>
+    <link rel="stylesheet" href="/Project/FSD-Individual/styles/navbar_footer.css">
+    <link rel="stylesheet" href="/Project/FSD-Individual/styles/hiring.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="home-navbar">
+        <nav class="navbar navbar-expand-xl bg-white navbar-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand flex-fill" href="homepage.html"><img src="\Project\FSD-Individual\images\new-dd-1.png" style="height: 40px;"></a>
+
+                <div class="searchBtn d-xl-none">
+                    <a href="#"><img src="\Project\FSD-Individual\images\toggle-search-icon.png" alt="Search" data-bs-toggle="collapse" data-bs-target="#sBox"></a>
+                </div>
+
+                <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <label class="hamburger">
+                      <input type="checkbox">
+                      <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                        <path class="line" d="M7 16 27 16"></path>
+                      </svg>
+                    </label>
+                </button>
+ 
+                <div class="container d-flex justify-content-center" id="toggled-sbox">
+                    <div class="collapse" id="sBox">
+                        <div class="search" id="toggled-search">
+                            <input type="text" id="searchBox" placeholder="What are you looking for?">
+                            <a href="#" id="sicon"><img src="\Project\FSD-Individual\images\search-icon.png"></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 20px !important;">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item" id="nav-list-search1">
+                            <div class="search d-none d-xl-block">
+                                <input type="text" class="navSearchInput" id="searchBox" placeholder="What are you looking for?">
+                                <a href="#" id="sicon"><img src="\Project\FSD-Individual\images\search-icon.png"></a>
+                            </div>
+                        </li>
+                        <li class="nav-item" id="nav-list-search2">
+                            <div class="search d-none d-xl-block">
+                                <input type="text" class="navSearchInput" id="searchBox" placeholder="What are you looking for?">
+                                <a href="#" id="sicon"><img src="\Project\FSD-Individual\images\search-icon.png"></a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown px-2">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                                Hire a Designer <img src="\Project\FSD-Individual\images\dropdown-icon.jpeg" style="height: 8px; padding-left: 3px;">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="\Project\FSD-Individual\pages\browsepage.html"><img src="\Project\FSD-Individual\images\job-icon.png" style="height: 22px; margin-right: 10px; margin-bottom: 5px;">Browse Designers</a></li>
+                                <li><a class="dropdown-item" href="\Project\FSD-Individual\pages\formpage.html"><img src="\Project\FSD-Individual\images\submit-icon.png" style="height: 22px; margin-right: 10px; margin-bottom: 5px;">Submit a Project Brief</a></li>
+                                <li><a class="dropdown-item" href="\Project\FSD-Individual\pages\hiring-infopage.html"><img src="\Project\FSD-Individual\images\info-icon.png" style="height: 22px; margin-right: 10px; margin-bottom: 5px;">Hiring on DesignDeck</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item px-2"><a class="nav-link" href="\Project\FSD-Individual\pages\findjobs.html">Find Jobs</a></li>
+                        <li class="nav-item px-2"><a class="nav-link" href="\Project\FSD-Individual\pages\blog.html">Blog</a></li>
+                    </ul>
+
+                    <div class="signupBtns">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item px-2">
+                                <a class="nav-link" id="signup" href="signup.html">Sign up</a>
+                            </li>
+                            <li class="nav-item px-2">
+                                <a href="login.html"><button class="btn btn-outline-dark active" id="log-btn">Log in</button></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    
+    <!-- heading -->
+    <div class="heading" data-aos="fade-up">
+        <div class="mainHeading" data-aos="fade-up"><h1>Find the perfect designer for your business.</h1></div>
+        <div class="para mx-auto mt-3" data-aos="fade-up" data-aos-delay="400">
+            <p>Work with the most talented and accomplished designers in the world on a freelance, contract, part-time, or full-time basis.</p>
+        </div>
+    </div>
+
+
+    <!-- price-cards -->
+
+    <div class="container">
+        <div class="gradientBox" data-aos="fade-up">
+            <div class="price-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="price-card-header">
+                    <h3>Hire a freelancer</h3>
+                    <p>Hire and pay designers — no payment needed until project terms are final.</p>
+                </div>
+                <div class="price-card-body">
+                    <div class="price">
+                        <span class="amount">Free</span>
+                    </div>
+                    <ul class="features">
+                        <li><img src="\Project\FSD-Individual\images\price_tick.png" class="icon"> World-class talent</li>
+                        <li><img src="\Project\FSD-Individual\images\price_tick.png" class="icon"> Payments, data, and intellectual property are safe and secure</li>
+                        <li><img src="\Project\FSD-Individual\images\price_tick.png" class="icon"> We hold project payment until project is final</li>
+                        <li><img src="\Project\FSD-Individual\images\price_tick.png" class="icon"> No hidden costs - 7.5% platform fee</li>
+                    </ul>
+                </div>
+                <div class="price-card-footer">
+                    <button class="btnt">Find a designer</button>
+                </div>
+            </div> 
+                       
+            <div class="price-card" data-aos="fade-up" data-aos-delay="800">
+                <div class="price-card-header">
+                    <h3>Post a job</h3>
+                    <p>Tap into our community and hire for full-time or part-time roles.</p>
+                </div>
+                <div class="price-card-body">
+                    <div class="price">
+                        <span class="amount">$150</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="features">
+                        <li><img src="\Project\FSD-Individual\images\price_tick.png" class="icon"> No placement fees</li>
+                        <li><img src="\Project\FSD-Individual\images\price_tick.png" class="icon"> Hire for full-time, part-time, or contract roles</li>
+                        <li><img src="\Project\FSD-Individual\images\price_tick.png" class="icon"> Hire for remote, onsite, or hybrid roles</li>
+                    </ul>
+                </div>
+                <div class="price-card-footer">
+                    <button class="btnt" style="margin-top: 65px;">Post a job</button>
+                    <div style="margin-top: 30px; color: gray;"><p>Cancel at anytime.</p></div>
+                </div>
+            </div>     
+
+            <div class="price-card" data-aos="fade-up" data-aos-delay="1200">
+                <div class="price-card-header">
+                    <h3>Hiring Suite</h3>
+                    <p>Make finding and hiring designers easier than ever with premium access.</p>
+                </div>
+                <div class="price-card-body">
+                    <div class="price">
+                        <span class="amount">$300</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <ul class="features">
+                        <li><img src="\Project\FSD-Individual\images\price_tick.png" class="icon"> Post, highlight, and pin your job listing for 7 days</li>
+                        <li><img src="\Project\FSD-Individual\images\price_tick.png" class="icon"> Highlight and pin messages to designers</li>
+                        <li><img src="\Project\FSD-Individual\images\price_tick.png" class="icon"> Ad-free browsing experience</li>
+                        <li><img src="\Project\FSD-Individual\images\price_tick.png" class="icon"> VIP Customer Support</li>
+                    </ul>
+                </div>
+                <div class="price-card-footer">
+                    <button class="btnt" style="margin-top: 20px; background-color: rgb(220, 59, 113) !important;">Get Started</button>
+                    <div style="margin-top: 30px; color: gray;"><p>Cancel at anytime.</p></div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+    <!-- description -->
+
+    <div class="container" style="margin-top: 100px; font-family: 'Mono Sans';">
+        <div class="row" style="gap: 50px;">
+            <div class="col-md-6" style="margin-left: 100px;" data-aos="fade-right">
+                <img src="\Project\FSD-Individual\images\hiring-img1.jpg" class="img-fluid desc-img" style="border-radius: 25px;">
+            </div>
+            
+            <div class="col-md-6 flex-column textBox" style="margin-top: 60px; width: 460px;" data-aos="fade-left" data-aos-delay="400">
+                <div>
+                    <h2 class="fw-bold">Finding and paying talent couldn’t be easier.</h2>
+                </div>
+                <div>
+                    <p style="font-size: 18px;">Search for members of our community that meet your project’s requirements. Send them a proposal request — once you’ve both agreed to the terms seamlessly pay on Design Deck.</p>
+                </div>
+                <div>
+                    <p style="font-size: 18px;">What’s more, to ensure you’re 100% happy, we’ll hold your payment until the project is complete.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="gap: 50px; margin-top: 100px;">
+            <div class="col-md-6 flex-column textBox" style="margin-top: 130px; width: 460px; margin-left: 100px;" data-aos="fade-right">
+                <div>
+                    <h2 class="fw-bold">Post on the #1 job board for hiring designers.</h2>
+                </div>
+                <div>
+                    <p style="font-size: 18px;">Gain access to the most talented and accomplished designer pool in the world.</p>
+                </div>
+                <div>
+                    <p style="font-size: 18px;">Link directly to your application form or website for ease of access.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 des-2" data-aos="fade-left" data-aos-delay="400">
+                <img src="\Project\FSD-Individual\images\hiring-img2.jpg" class="img-fluid desc-img" style="border-radius: 25px; margin-top: 70px;">
+            </div>
+        </div>
+
+        <div class="row" style="gap: 50px; margin-top: 150px;">
+            <div class="col-md-6" style="margin-left: 100px;" data-aos="fade-right">
+                <img src="\Project\FSD-Individual\images\hiring-img3.jpg" class="img-fluid desc-img" style="border-radius: 25px;">
+            </div>
+            
+            <div class="col-md-6 flex-column textBox" style="margin-top: 60px; width: 460px;" data-aos="fade-left" data-aos-delay="400">
+                <div>
+                    <h2 class="fw-bold">Stand out in the crowd.</h2>
+                </div>
+                <div>
+                    <p style="font-size: 18px;">Hiring Suite subscribers get access to:</p>
+                </div>
+                <div class="d-flex">
+                    <img src="\Project\FSD-Individual\images\price_tick.png" class="icon">
+                    <p style="font-size: 18px; margin-left: 10px;" class="fw-bold">Featured and pinned job posts</p>
+                </div>
+                <div class="d-flex">
+                    <img src="\Project\FSD-Individual\images\price_tick.png" class="icon">
+                    <p style="font-size: 18px; margin-left: 10px;" class="fw-bold">Featured and pinned messages</p>
+                </div>
+                <div class="d-flex">
+                    <img src="\Project\FSD-Individual\images\price_tick.png" class="icon">
+                    <p style="font-size: 18px; margin-left: 10px;" class="fw-bold">Ad-free browsing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- logos -->
+
+    <div class="heading" style="margin-top: 150px !important;">
+        <div class="mainHeading" data-aos="fade-down"><p style="font-size: 40px !important;" class="fw-bold text-center">The most design-forward companies on the planet hire designers from Design Deck.</p></div>
+        <div class="para mx-auto mt-3 logoPara" data-aos="fade-down"><p style="font-size: 18px !important; width: 600px !important;"><p>Our community partners with some of the most valuable companies on the planet.</p></div>
+    </div>
+
+    <div class="logos">
+        <ul>
+            <li><img src="\Project\FSD-Individual\images\twitch.jpg" data-aos="fade-up" data-aos-delay="100"></li>
+            <li><img src="\Project\FSD-Individual\images\framer.jpg" data-aos="fade-up" data-aos-delay="300"></li>
+            <li><img src="\Project\FSD-Individual\images\microsoft.jpg" data-aos="fade-up" data-aos-delay="500"></li>
+            <li><img src="\Project\FSD-Individual\images\meta.jpg" data-aos="fade-up" data-aos-delay="700"></li>
+            <li><img src="\Project\FSD-Individual\images\adobe.jpg" data-aos="fade-up" data-aos-delay="900"></li>
+            <li><img src="\Project\FSD-Individual\images\amazon.jpg" data-aos="fade-up" data-aos-delay="1100"></li>
+            <li><img src="\Project\FSD-Individual\images\sqsp.jpg" data-aos="fade-up" data-aos-delay="1300"></li>
+            <li><img src="\Project\FSD-Individual\images\apple.jpg" data-aos="fade-up" data-aos-delay="1500"></li>
+            <li><img src="\Project\FSD-Individual\images\figma.jpg" data-aos="fade-up" data-aos-delay="1700"></li>
+            <li><img src="\Project\FSD-Individual\images\uber.jpg" data-aos="fade-up" data-aos-delay="1900"></li>
+            <li><img src="\Project\FSD-Individual\images\google.jpg" data-aos="fade-up" data-aos-delay="2100"></li>
+            <li><img src="\Project\FSD-Individual\images\stripe.jpg" data-aos="fade-up" data-aos-delay="2300"></li>
+        </ul>
+    </div>
+
+
+    <!-- price-cards (short-version) -->
+
+    <div class="container">
+        <div class="gradientBox2" data-aos="fade-up" data-aos-delay="2400">
+            <div class="price-card" data-aos="fade-up" data-aos-delay="2500">
+                <div class="price-card-header">
+                    <h3>Hire a freelancer</h3>
+                    <p>Hire and pay designers — no payment needed until project terms are final.</p>
+                </div>
+                <div class="price-card-body">
+                    <div class="price">
+                        <span class="amount">Free</span>
+                    </div>
+                </div>
+                <div class="price-card-footer">
+                    <button class="btnt">Find a designer</button>
+                </div>
+            </div> 
+                       
+            <div class="price-card" data-aos="fade-up" data-aos-delay="2900">
+                <div class="price-card-header">
+                    <h3>Post a job</h3>
+                    <p>Tap into our community and hire for full-time or part-time roles.</p>
+                </div>
+                <div class="price-card-body">
+                    <div class="price">
+                        <span class="amount">$150</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+                <div class="price-card-footer">
+                    <button class="btnt">Post a job</button>
+                    <div style="color: gray; margin-top: 30px;"><p>Cancel at anytime.</p></div>
+                </div>
+            </div>     
+
+            <div class="price-card" data-aos="fade-up" data-aos-delay="3000">
+                <div class="price-card-header">
+                    <h3>Hiring Suite</h3>
+                    <p>Make finding and hiring designers easier than ever with premium access.</p>
+                </div>
+                <div class="price-card-body">
+                    <div class="price">
+                        <span class="amount">$300</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+                <div class="price-card-footer">
+                    <button class="btnt" style="background-color: rgb(220, 59, 113) !important;">Get Started</button>
+                    <div style="color: gray; margin-top: 30px;"><p>Cancel at anytime.</p></div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="container mt-5" style="margin-top: 100px !important;">
+        <div class="footer-list d-flex flex-wrap justify-content-between py-3 mb-5">
+            <ul class="list-inline d-flex flex-wrap justify-content-center mb-4 mb-lg-0 mt-lg-5" style="margin-right: 30px;">
+                <li class="list-inline-item"><a href="homepage.html" class="text-decoration-none px-3"><img src="\Project\FSD-Individual\images\new-dd-1.png" style="height: 40px;"></a></li>
+            </ul>
+        
+            <div class="items-list mt-4 mt-lg-5">
+                <ul class="list-inline d-flex flex-wrap justify-content-center">
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">For designers</a></li>
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Hire talent</a></li>
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Inspiration</a></li>
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Advertising</a></li>
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Blog</a></li>
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">About</a></li>
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Careers</a></li>
+                    <li class="list-inline-item"><a href="#" class="topics text-decoration-none px-3 text-dark">Support</a></li>
+                </ul>
+            </div>
+        
+            <ul class="d-flex justify-content-center">
+                <li class="list-inline-item">
+                    <a class="socialContainer containerOne" href="https://www.instagram.com/kahan.04_/profilecard/?igsh=MXRkZGFzYTN4eG1yaw==">
+                        <svg viewBox="0 0 16 16" class="socialSvg instagramSvg" width="20" height="20">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                        </svg>
+                    </a>
+                </li>
+        
+                <li class="list-inline-item">
+                    <a class="socialContainer containerTwo" href="#">
+                        <svg viewBox="0 0 16 16" class="socialSvg twitterSvg" width="20" height="20">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                        </svg>
+                    </a>
+                </li>
+        
+                <li class="list-inline-item">
+                    <a class="socialContainer containerThree" href="#">
+                        <svg viewBox="0 0 448 512" class="socialSvg linkdinSvg" width="20" height="20">
+                            <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <div class="footer-description d-flex flex-wrap justify-content-between">
+            <ul>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">© 2025 DesignDeck</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Terms</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Privacy</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Cookies</a></li>
+            </ul>
+    
+            <ul>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Jobs</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Designers</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Freelancers</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Tags</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Places</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-secondary" href="#">Resources</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+</html>
